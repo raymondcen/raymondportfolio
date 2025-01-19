@@ -5,10 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        'nav-spacing': '50px',
+      }
+    },
     screens: {
       'half': '930px',
     },
+    
   },
   plugins: [],
 }

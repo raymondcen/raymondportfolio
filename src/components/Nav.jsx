@@ -1,17 +1,18 @@
-
+var background = "bg-slate-100";
 
 const Nav = () => {
   return (
-    <div className = "flex flex-col half:flex-row">
-      <div className="bg-slate-100 h-16 half:h-screen w-full half:w-1/4 p-4 half:p-8 text-left relative">
-        <nav className="text-right text-2xl half:text-half"> SideBar</nav>
+    <>
+      <div className="flex flex-col half:flex-row bg-indigo-600 h-16 relative w-full p-4 half:h-screen half:w-1/4 ">
+        <div className="flex flex-row space-x-10 justify-center items-center half:justify-normal half:items-end half:flex-col half:space-y-20 half:w-full half:mt-[220px]">
+          <a href="#" className="text-black text-xl half:text-2xl half:text-right">Home</a>
+          <a href="#" className="text-black text-xl half:text-2xl half:text-right">Projects</a>
+          <a href="#" className="text-black text-xl half:text-2xl half:text-right">Education</a>
+          <a href="#" className="text-black text-xl half:text-2xl half:text-right">About</a>
+        </div>
       </div>
+    </>
+  );
+};
 
-      <div className="p-7"> 
-        <h1 className="text-2xl font-semibold">Home Page</h1>
-      </div>
-    </div>
-  )
-}
-
-export default Nav
+export default Nav;
