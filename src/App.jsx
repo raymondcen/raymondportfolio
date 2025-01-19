@@ -1,10 +1,10 @@
 
-import Main from "./components/main.jsx"
+import Landing from "./components/Landing.jsx"
 
 function App() {
   return (
     <>
-      <Main/>
+      <Landing/>
     </>
   )
 }
