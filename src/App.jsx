@@ -14,7 +14,7 @@ function PageRoutes(){
   return(
     <>
       <Routes>
-        <Route path="/" index element={<Home/>} />
+        <Route path="/" element={<Home/>} />
         <Route path="/projects" element={<Projects/>} />
         <Route path="/education" element={<Education/>} />
         <Route path="/about" element={<About/>} />
@@ -26,10 +26,12 @@ function PageRoutes(){
 function App() {
   return (
     <>
+    <div className="bg-gray-100">
       <HashRouter>
         <Navbar />
         <PageRoutes />
       </HashRouter>
+    </div>
     </>
   )
 }

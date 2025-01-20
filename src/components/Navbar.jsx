@@ -62,7 +62,7 @@ const Navbar = () => {
   return (
     <>
       <div> 
-        {/* darked background when opening sidebar */}
+        {/* darkened background when opening sidebar */}
         <div 
         onClick={()=>setIsOpen(false)}
         className={`${ isOpen ? 'block' : 'hidden'} md:hidden fixed inset-0 max-h-screen z-[998] bg-black/40`}
@@ -70,14 +70,15 @@ const Navbar = () => {
         </div>
         {/* animation for sidebar */}
         <motion.div
-          variants={navbar_animation}
-          animate={isOpen ? "open" : "closed"}
-          className="bg-slate-100 text-black z-[999] 
-                      md:w-[480px] max-w-[240px]  md:relative md:min-w-[480px] fixed h-screen overflow-hidden"
-        >
+           variants={navbar_animation}
+           animate={isOpen ? "open" : "closed"}
+           className={`${ isOpen && isTab ? "bg-neutral-100 shadow-2xl " : "bg-transparent" }text-black z-[999] 
+                         md:bg-transparent md:w-[480px] max-w-[240px]  
+                         md:relative md:min-w-[480px] fixed h-screen overflow-y-auto `}
+         >
           {/* Links and Pages */}
           <div className="flex flex-col h-full">
-            <ul className="whitespace-pre p-1 text-right gap-[70px] flex flex-col font-medium mt-[220px]">
+            <ul className="whitespace-pre p-1 text-right gap-[70px] flex flex-col font-medium mt-[220px] mr-[15px]">
               <li>
                 <NavLink to="/" className="link"> 
                 <span
@@ -131,7 +132,7 @@ const Navbar = () => {
                 duration: 0, 
               }}
               onClick={() => setIsOpen(!isOpen)}
-              className="absolute w-fit h-fit z-50 right-2 top-5 bottom-5 cursor-pointer md:block md:hidden"
+              className={`absolute w-fit h-fit z-50 right-2 top-5 bottom-5 cursor-pointer md:block md:hidden ${isOpen ? "hidden" : ""}`}
           >
             <HiBars2 size={40}/>
           </motion.div>
