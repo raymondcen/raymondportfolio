@@ -74,13 +74,13 @@ const Navbar = () => {
         <motion.div
           variants={navbar_animation}
           animate={isOpen ? "open" : "closed"}
-          className={`${ isOpen && isTab ? "bg-neutral-100 shadow-2xl " : "bg-transparent"} 
-                         text-black z-[999] md:bg-blue-100 md:w-[480px] max-w-[240px]  
+          className={`${ isOpen && isTab ? "bg-gray-100 shadow-2xl " : "bg-transparent"} 
+                         text-black z-[999] md:bg-transparent md:w-[480px] max-w-[240px]  
                          md:relative md:min-w-[480px] fixed h-screen overflow-y-auto `}
         >
           {/* links */}
-          <div className="flex flex-col h-full">
-            <ul className="whitespace-pre p-1 text-right gap-[70px] flex flex-col font-medium mt-[220px] mr-[15px]">
+          <div className="flex flex-col ">
+            <ul className="whitespace-pre p-1 md:fixed text-right gap-[70px] flex flex-col font-medium mt-[220px] left-[300px]">
               {[
                 { path: "/", name: "Home" },
                 { path: "/projects", name: "Projects" },
@@ -109,7 +109,7 @@ const Navbar = () => {
                     </span>                   
                         <GoDotFill
                           size={20}
-                          className={`absolute inline transition-opacity duration-300 ease-out translate-y-[12px] right-[25px] ${
+                          className={`absolute inline transition-opacity duration-300 ease-out translate-y-[12px] right-[15px] md:right-[10px] ${
                             activeLink === link.path ? "opacity-100 scale-150" : "opacity-0 scale-150"
                           }`}
                         />
