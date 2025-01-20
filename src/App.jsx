@@ -1,10 +1,15 @@
+import { Route, Routes, useLocation, HashRouter } from "react-router-dom";
 
-import Landing from "./components/Landing.jsx"
+import Landing from "./pages/Landing.jsx"
+import Navbar from "./components/Navbar.jsx"
 
 function App() {
   return (
     <>
-      <Landing/>
+      <HashRouter>
+        <Navbar />
+        <Landing />
+      </HashRouter>
     </>
   )
 }

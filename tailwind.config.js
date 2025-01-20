@@ -6,14 +6,8 @@ export default {
   ],
   theme: {
     extend: {
-      spacing: {
-        'nav-spacing': '50px',
-      }
+      
     },
-    screens: {
-      'half': '930px',
-    },
-    
   },
   plugins: [],
 }
