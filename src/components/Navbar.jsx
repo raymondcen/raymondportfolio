@@ -65,7 +65,7 @@ const Navbar = () => {
         {/* darked background when opening sidebar */}
         <div 
         onClick={()=>setIsOpen(false)}
-        className={`${ isOpen ? 'block' : 'hidden'} md:hidden fixed inset-0 max-h-screen z-[998] bg-slate-200`}
+        className={`${ isOpen ? 'block' : 'hidden'} md:hidden fixed inset-0 max-h-screen z-[998] bg-black/40`}
         >
         </div>
         {/* animation for sidebar */}
@@ -90,7 +90,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/" className="link"> 
+                <NavLink to="/projects" className="link"> 
                 <span
                   className={`transition-opacity transform duration-100 ${
                     isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95"
@@ -101,7 +101,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/" className="link"> 
+                <NavLink to="/education" className="link"> 
                 <span
                   className={`transition-opacity transform duration-100 ${
                     isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95"
@@ -112,7 +112,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/" className="link"> 
+                <NavLink to="/about" className="link"> 
                 <span
                   className={`transition-opacity transform duration-100 ${
                     isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95"
