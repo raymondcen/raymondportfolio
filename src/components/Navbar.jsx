@@ -102,7 +102,7 @@ const Navbar = () => {
 
                      <span
                       //fade in text transition
-                      className={` duration-100 ${ activeLink ===link.path ? "opacity-0 scale-100 " : "opacity-100 scale-100" }`}
+                      className={` duration-300 ${ activeLink ===link.path ? "opacity-0 scale-100 " : "opacity-100 scale-100" }`}
                     >
                       {link.name}
 

@@ -26,7 +26,7 @@ function PageRoutes(){
 function App() {
   return (
     <>
-    <div className="bg-gray-100 h-[2000px]">
+    <div className="bg-gray-100 h-[1200px]">
       <HashRouter>
         <Navbar />
         <PageRoutes />

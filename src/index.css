@@ -9,6 +9,6 @@
 
 
 .link{
-    @apply hover:bg-slate-300 p-2 rounded-md gap-6 items-center md:cursor-pointer 
-    cursor-default md:duration-100 text-3xl;
+    @apply hover:bg-slate-200 p-2 rounded-md gap-6 items-center md:cursor-pointer 
+    cursor-default text-3xl;
 }
