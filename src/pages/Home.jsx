@@ -16,17 +16,17 @@ const Home = () => {
             </div>
       </div>
 
-      <div className="flex-wrap inset-x-0 top-0 absolute bg-red-200 h-[550px]  md:ml-[32vw] md:mr-[20vw] mt-[87px]"
+      <div className="flex-wrap inset-x-0 top-0 absolute bg-transparent h-[550px]  md:ml-[32vw] md:mr-[20vw] mt-[87px]"
       >
-        <div className="bg-green-500 absolute">
+        <div className="bg-green-500 text-[3rem] mt-[100px] ml-[5vw] mr-[400px] absolute">
           <span>Raymond Cen</span>
           <span> is a student at </span>
           <span>Oregon </span> <span>State </span> <span>University</span>
         </div>
 
         <img
-          className="absolute object-cover mr-[1vw] ml-[33vw] mt-[200px]"
-          src="./public/images/temp-image.webp"
+          className="absolute object-cover ml-[33vw] mt-[200px]"
+          src="/images/temp-image.webp"
           alt="profile-image"
         ></img>
 
