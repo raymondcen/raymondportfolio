@@ -1,33 +1,39 @@
 const Home = () => {
   return ( 
-    // greenbox
-    <div className="inset-x-0 top-0 absolute bg-emerald-100 h-[600px]
-                    mx-[10vw] mt-[58vh] "
-    >
-     
-          <div className="md:ml-[340px] md:mr-[10vw] md:mt-[80px]"> 
-            <span>
-              Welcome to the Home Page AA A A A AA A A A  A A A AA A A A  
-              AA A A HH H H H HH H H H HH HHH H H H HH H HH H a a aa a a a 
-              aa a a aa a a a aa a aaaa a aa a a a aa a a aa a a a aa a a aa  
-              a a a a a! 
-            </span>
-          </div>
+    
+    <div>
+      {/* greenbox */}
+      <div className="inset-x-0 top-0 absolute bg-emerald-100 h-[600px]
+                      mx-[10vw] mt-[58vh] "
+      >
+            <div className="md:ml-[340px] md:mr-[10vw] md:mt-[80px]"> 
+              <span>
+                Welcome to the Home Page AA A A A AA A A A  A A A AA A A A  
+                AA A A HH H H H HH H H H HH HHH H H H HH H HH H a a aa a a a 
+                aa a a aa a a a aa a aaaa a aa a a a aa a a aa a a a aa a a aa  
+                a a a a a! 
+              </span>
+            </div>
+      </div>
 
-        <div className="inset-x-0 top-0 absolute bg-red-200 h-[550px]  md:ml-[340px] md:mr-[10vw] -mt-[500px]"
-        >
+      <div className="flex-wrap inset-x-0 top-0 absolute bg-red-200 h-[550px]  md:ml-[32vw] md:mr-[20vw] mt-[87px]"
+      >
+        <div className="bg-green-500 absolute">
           <span>Raymond Cen</span>
           <span> is a student at </span>
           <span>Oregon </span> <span>State </span> <span>University</span>
-          <img className="transform scale-x-[2] scale-y-[3] translate-x-[740px] translate-y-[200px]" 
-              src="./public/images/temp-image.webp" alt="profile-image"></img>
-
-            {/* <img className="transform scale-[2] translate-x-[740px] translate-y-[20px]" 
-            src="./public/images/temp-image.webp" alt="profile-image"></img> */}
         </div>
-       
-    </div>
-  );
+
+        <img
+          className="absolute object-cover mr-[1vw] ml-[33vw] mt-[200px]"
+          src="./public/images/temp-image.webp"
+          alt="profile-image"
+        ></img>
+
+      </div>
+  
+</div>
+);
 };
 
 export default Home;
