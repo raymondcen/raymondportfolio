@@ -18,10 +18,10 @@ const Home = () => {
 
       <div className="flex-wrap inset-x-0 top-0 absolute bg-transparent h-[550px]  md:ml-[32vw] md:mr-[20vw] mt-[87px]"
       >
-        <div className="bg-green-500 text-[3rem] mt-[100px] ml-[5vw] mr-[400px] absolute">
-          <span>Raymond Cen</span>
+        <div className="text-neutral-500 bg-transparent md:text-[2.5rem] 2xl:text-[3rem] md:mt-[10px] xl:mt-[170px] ml-[5vw] mr-[300px] absolute">
+          <span className="font-[650] text-neutral-950">Raymond Cen</span>
           <span> is a student at </span>
-          <span>Oregon </span> <span>State </span> <span>University</span>
+          <span className="text-amber-500">Oregon </span> <span  className="text-neutral-950">State </span> <span className="text-amber-500">University</span>
         </div>
 
         <img
